@@ -116,6 +116,7 @@ def RSA(K):
   print("Llave publica " + str(public))
   print("Llave privada " + str(private))
   print()
+  #utilizmos la libreria hashlib para usar hexadecimales y pasarlos a enteros para cifrar la clave secreta 
   print("Mensaje 1 = Hola Mundo")
   m1 = hashlib.sha1()
   m1.update(b"Hola Mundo")
